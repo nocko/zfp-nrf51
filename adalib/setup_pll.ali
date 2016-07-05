@@ -1,0 +1,46 @@
+V "GNAT Lib v2016"
+M P W=b
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/beuvry.a/gnatmail/sandbox/gpl-2016/arm-elf-linux/recompilablerts/src/bb-runtimes/obj/zfp-lm3s.build/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m3
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U setup_pll%b		setup_pll.adb		a333fc06 NE OO SU
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D setup_pll.adb		20160516092130 0e04ad4b setup_pll%b
+D system.ads		20160516092930 f7820325 system%s
+X 1 interfac.ads
+38K9*Interfaces 184e15 2|30w6 30r22
+74M9*Unsigned_32 2|34r10 39r10 44r14
+X 2 setup_pll.adb
+33U11*Setup_Pll 33b11 81l5 81t14
+34m4 RIS{1|74M9} 35m8 35r8 36m24 36r24 37r21 65r11
+39m4 RCC{1|74M9} 40m8 40r8 41m24 41r24 42r21 51r15 53m4 57m4 71m4 77m4 80m4
+44m4 RCC_Val{1|74M9} 51m4 52m4 52r16 53r11 56m4 56r16 57r11 70m4 70r16 71r11
+. 75m4 75r15 76m4 76r15 77r11 79m4 79r15 80r11
+60i8 I{integer}
+X 3 system.ads
+60K9*System 2|31w6 35r24 40r24 3|172e11
+90M9*Address 2|35r24 40r24
+

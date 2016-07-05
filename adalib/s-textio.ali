@@ -1,0 +1,69 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U system.text_io%b	s-textio.adb		b0f043cf NE OL PK
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+
+U system.text_io%s	s-textio.ads		e2d73747 NE OL PR PK
+W system%s		system.ads		system.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D system.ads		20160629161519 97e567b6 system%s
+D s-textio.ads		20160629152839 753250f1 system.text_io%s
+D s-textio.adb		20160629152839 089226e0 system.text_io%b
+X 1 interfac.ads
+38K9*Interfaces 184e15 4|33w6 36r8
+74M9*Unsigned_32 4|38r13 43r13 70r15 75r15 80r21 85r19 90r20 95r20 100r20
+. 105r19
+X 2 system.ads
+60K9*System 172e11 3|35r9 81r5 4|32w6 35r14 188r5
+X 3 s-textio.ads
+35K16*Text_IO 2|60k9 3|81l12 81e19 4|35b21 188l12 188t19
+42U14*Initialize 4|69b14 148l8 148t18
+46b4*Initialized{boolean} 4|147m7
+54V13*Is_Tx_Ready{boolean} 4|163b13 166l8 166t19
+61U14*Put 61>19 4|172b14 177l8 177t11
+61e19 C{character} 4|172b19 176r32
+65V13*Use_Cr_Lf_For_New_Line{boolean} 4|183b13 186l8 186t30
+73V13*Is_Rx_Ready{boolean} 4|154b13 157l8 157t19
+78V13*Get{character} 4|60b13 63l8 63t11
+X 4 s-textio.adb
+38m4 UARTDR{1|74M9} 39m8 39r8 40m24 40r24 41r21 62r29 176m7
+43m4 UARTFR{1|74M9} 44m8 44r8 45m24 45r24 46r21 156r15 165r15
+52N4 TXFF 165r26
+53N4 RXFE 156r26
+70m7 RCGC1{1|74M9} 71m11 71r11 72m27 72r27 73r24 118m7 118r16
+75m7 RCGC2{1|74M9} 76m11 76r11 77m27 77r27 78r24 117m7 117r16
+80m7 GPIOA_AFSEL{1|74M9} 81m11 81r11 82m27 82r27 83r24 128m7 128r22
+85m7 GPIOA_DEN{1|74M9} 86m11 86r11 87m27 87r27 88r24 132m7 132r20
+90m7 UART0_IBRD{1|74M9} 91m11 91r11 92m27 92r27 93r24 136m7
+95m7 UART0_FBRD{1|74M9} 96m11 96r11 97m27 97r27 98r24 137m7
+100m7 UART0_LCRH{1|74M9} 101m11 101r11 102m27 102r27 103r24 141m7
+105m7 UART0_CTL{1|74M9} 106m11 106r11 107m27 107r27 108r24 145m7
+110N7 Freq 112r33
+111N7 Baud 112r45 112r57
+112N7 Brate 136r21 137r21
+122i11 I{integer}
+

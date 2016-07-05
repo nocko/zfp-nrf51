@@ -1,0 +1,61 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U interfaces.c%s	i-c.ads			b7a0e00c NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D i-c.ads		20160629152839 ed15b264 interfaces.c%s
+D system.ads		20160629161519 97e567b6 system%s
+X 1 interfac.ads
+38K9*Interfaces 184e15 2|39r9 102r5
+X 2 i-c.ads
+39K20*C 1|38k9 2|102l16 102e17
+44N4*CHAR_BIT 57r29 64r31 89r38
+45N4*SCHAR_MIN 56r30
+46N4*SCHAR_MAX 56r43
+47N4*UCHAR_MAX 63r31
+52I9*int<integer> 59r36
+53I9*short<short_integer> 60r36
+54I9*long<long_integer> 61r36
+56I9*signed_char<short_short_integer> 57r8
+59M9*unsigned
+60M9*unsigned_short
+61M9*unsigned_long
+63M9*unsigned_char 64r8 66r26
+66M12*plain_char{63M9}
+68I9*ptrdiff_t<integer>
+72M9*size_t 88r30 100r31
+76F9*C_float<float>
+77F9*double<long_float>
+78F9*long_double<long_long_float>
+84E9*char<character> 86r19 86r27 88r58
+86e4*nul{84E9}
+88A9*char_array(84E9)<72M9> 89r8
+95E9*wchar_t<wide_character> 96r8 98r24 98r35 100r59
+98e4*wide_nul{95E9}
+100A9*wchar_array(95E9)<72M9>
+

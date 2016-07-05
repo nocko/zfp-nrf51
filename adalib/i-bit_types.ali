@@ -1,0 +1,70 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RR NO_ELABORATION_CODE
+
+U interfaces.bit_types%s  i-bit_types.ads	e721877b NE OL PU PK
+W interfaces%s		interfac.ads		interfac.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D i-bit_types.ads	20160629152839 bd94d513 interfaces.bit_types%s
+D system.ads		20160629161519 97e567b6 system%s
+X 1 interfac.ads
+38K9*Interfaces 184e15 2|36r9 40r20 41r21 42r20 103r5
+63M9*Unsigned_8 2|42r31
+66M9*Unsigned_16 2|41r32
+74M9*Unsigned_32 2|40r31
+X 2 i-bit_types.ads
+36K20*Bit_Types 1|38k9 2|103l16 103e25
+40M12*Word{1|74M9}
+41M12*Short{1|66M9}
+42M12*Byte{1|63M9}
+44M9*Bit
+46M9*UInt2
+48M9*UInt3
+50M9*UInt4
+52M9*UInt5
+54M9*UInt6
+56M9*UInt7
+58M9*UInt9
+60M9*UInt10
+62M9*UInt11
+64M9*UInt12
+66M9*UInt13
+68M9*UInt14
+70M9*UInt15
+72M9*UInt17
+74M9*UInt18
+76M9*UInt19
+78M9*UInt20
+80M9*UInt21
+82M9*UInt22
+84M9*UInt23
+86M9*UInt24
+88M9*UInt25
+90M9*UInt26
+92M9*UInt27
+94M9*UInt28
+96M9*UInt29
+98M9*UInt30
+100M9*UInt31
+

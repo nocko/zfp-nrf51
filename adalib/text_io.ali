@@ -1,0 +1,39 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U text_io%s		text_io.ads		ba1e63fb NE OL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20160629152839 3ffc8e18 ada%s
+D a-textio.ads		20160629152839 ffc84532 ada.text_io%s
+D system.ads		20160629161519 97e567b6 system%s
+D text_io.ads		20160629152839 45d626c9 text_io%s
+X 1 ada.ads
+16K9*Ada 19e8 4|22r6 24r25
+X 2 a-textio.ads
+36K13*Text_IO 52e16 4|22w10 24r29
+X 4 text_io.ads
+24K9*Text_IO=24:29
+

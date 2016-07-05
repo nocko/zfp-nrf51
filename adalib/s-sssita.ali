@@ -1,0 +1,60 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U system.secondary_stack.single_task%b  s-sssita.adb  ac4a003b NE OL PK
+W system%s		system.ads		system.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+
+U system.secondary_stack.single_task%s  s-sssita.ads  742a3b14 NE OL PK
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D system.ads		20160629161519 97e567b6 system%s
+D s-secsta.ads		20160629152839 a4d06a42 system.secondary_stack%s
+D s-sssita.ads		20160629152839 d0fa5156 system.secondary_stack.single_task%s
+D s-sssita.adb		20160629152839 51731b69 system.secondary_stack.single_task%b
+D s-stoele.ads		20160629152839 2dc34a04 system.storage_elements%s
+X 1 system.ads
+60K9*System 172e11 3|60r9 68r5 4|36r6 38r14 70r5
+90M9*Address 3|62r34 4|57r34
+X 2 s-secsta.ads
+36K16*Secondary_Stack 1|60k9 2|78e27 3|60r16 68r12 4|38r21 70r12
+40N4*Default_Secondary_Stack_Size 4|49r45 62r44
+43U14*SS_Init 4|62s10
+X 3 s-sssita.ads
+60K32*Single_Task 2|36k16 3|68l28 68e39 4|38b37 70l28 70t39
+62V13*Get_Sec_Stack{1|90M9} 63i<c,__gnat_get_secondary_stack>22 4|57b13 68l8
+. 68t21
+X 4 s-sssita.adb
+44b4 Initialized{boolean} 59r14 64m10
+48a4 Secondary_Stack{5|70A9} 50r8 62m19 62r19 67m14 67r14
+X 5 s-stoele.ads
+42K16*Storage_Elements 4|36w13 48r30 49r12 5|117e28
+54I9*Storage_Offset<integer> 4|49r29
+64M9*Storage_Element
+70A9*Storage_Array(64M9)<54I9> 4|48r47
+

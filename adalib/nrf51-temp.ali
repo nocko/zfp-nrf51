@@ -1,0 +1,78 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U nrf51.temp%s		nrf51-temp.ads		8d26532d NE OO PR PK IL
+W nrf51%s		nrf51.ads		nrf51.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D nrf51.ads		20160630185727 f0252fcf nrf51%s
+D nrf51-temp.ads	20160630185727 eae61b54 nrf51.temp%s
+D system.ads		20160629161519 97e567b6 system%s
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 nrf51.ads
+11K9*nrf51 151e10 3|8r9 48r23 79r23 110r23 127r24 129r24 131r24 137r24 157r5
+18M12*Word{1|74M9} 3|127r30 129r30 131r30 137r30
+77M9*UInt31 3|48r29 79r29 110r29
+120m4*TEMP_Base{4|90M9} 3|155r30
+X 3 nrf51-temp.ads
+8K15*TEMP 2|11k9 3|157l11 157e15
+20E9*DATARDY_Field 26e6 27r8
+23n7*Disabled{20E9} 28r7
+25n7*Enabled{20E9} 29r7
+32E9*DATARDY_Field_1 38e6 39r8 46r23
+35n7*Datardy_Field_Reset{32E9} 40r7 46r42
+37n7*Set{32E9} 41r7
+44R9*INTENSET_Register 50e6 53r8 133r24
+46e7*DATARDY{32E9} 54r7
+48m7*Reserved_1_31{2|77M9} 55r7
+63E9*DATARDY_Field_2 69e6 70r8 77r23
+66n7*Datardy_Field_Reset{63E9} 71r7 77r42
+68n7*Clear{63E9} 72r7
+75R9*INTENCLR_Register 81e6 84r8 135r24
+77e7*DATARDY{63E9} 85r7
+79m7*Reserved_1_31{2|77M9} 86r7
+94E9*POWER_Field 100e6 101r8 108r23
+97n7*Disabled{94E9} 102r7 108r38
+99n7*Enabled{94E9} 103r7
+106R9*POWER_Register 112e6 115r8 139r24
+108e7*POWER{94E9} 116r7
+110m7*Reserved_1_31{2|77M9} 117r7
+125R9*TEMP_Peripheral 141e6 143r8 154r26
+127m7*TASKS_START{2|18M12} 144r7
+129m7*TASKS_STOP{2|18M12} 145r7
+131m7*EVENTS_DATARDY{2|18M12} 146r7
+133r7*INTENSET{44R9} 147r7
+135r7*INTENCLR{75R9} 148r7
+137m7*TEMP{2|18M12} 149r7
+139r7*POWER{106R9} 150r7
+154r4*TEMP_Periph{125R9}
+X 4 system.ads
+60K9*System 3|6w6 51r24 82r24 113r24 4|172e11
+90M9*Address
+114n41*Low_Order_First{114E9} 3|51r31 82r31 113r31
+

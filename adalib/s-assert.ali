@@ -1,0 +1,48 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+A -g
+P ZX
+
+RN
+RV NO_EXCEPTIONS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U system.assertions%b	s-assert.adb		748adc27 NE OL PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W system%s		system.ads		system.ali
+
+U system.assertions%s	s-assert.ads		5a684b22 NE OL PK
+W system%s		system.ads		system.ali
+
+D ada.ads		20160629152839 3ffc8e18 ada%s
+D a-except.ads		20160629152839 5b5f0f2f ada.exceptions%s
+D a-except.adb		20160629152839 0537fae3 ada.exceptions%b
+D system.ads		20160629161519 97e567b6 system%s
+D s-assert.ads		20160629152839 cd8d2c94 system.assertions%s
+D s-assert.adb		20160629152839 b907f0b3 system.assertions%b
+X 4 system.ads
+60K9*System 172e11 5|41r9 50r5 6|34r14 45r5
+X 5 s-assert.ads
+41K16*Assertions 4|60k9 5|50l12 50e22 6|34b21 45l12 45t22
+43X4*Assert_Failure 6|42r13
+46U14*Raise_Assert_Failure 46>36 47r22 6|40b14 43l8 43t28
+46a36 Msg{string} 6|40b36 42r33
+

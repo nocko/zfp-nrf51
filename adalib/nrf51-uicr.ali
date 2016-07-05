@@ -1,0 +1,91 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U nrf51.uicr%s		nrf51-uicr.ads		ed057537 NE OO PR PK IL
+W nrf51%s		nrf51.ads		nrf51.ali
+W system%s		system.ads		system.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D nrf51.ads		20160630185727 f0252fcf nrf51%s
+D nrf51-uicr.ads	20160630185727 8ac53d4e nrf51.uicr%s
+D system.ads		20160629161519 97e567b6 system%s
+D s-unstyp.ads		20160629152839 34867c83 system.unsigned_types%s
+X 1 interfac.ads
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 2 nrf51.ads
+11K9*nrf51 151e10 3|8r9 52r24 84r23 98r31 106r24 119r47 124r47 129r50 145r24
+. 159r30 182r5
+18M12*Word{1|74M9} 3|119r53 124r53 129r56 145r30 159r36
+19M12*Short{1|66M9} 3|52r30 98r37 106r30
+63M9*UInt24 3|84r29
+146m4*UICR_Base{4|90M9} 3|180r30
+X 3 nrf51-uicr.ads
+8K15*UICR 2|11k9 3|182l11 182e15
+21E9*PR0_Field 27e6 28r8 48r24
+24n7*Enabled{21E9} 29r7
+26n7*Disabled{21E9} 30r7 48r37
+33E9*PALL_Field 39e6 40r8 50r24
+36n7*Enabled{33E9} 41r7
+38n7*Disabled{33E9} 42r7 50r38
+45R9*RBPCONF_Register 54e6 57r8 147r24
+48e7*PR0{21E9} 58r7
+50e7*PALL{33E9} 59r7
+52m7*Reserved_16_31{2|19M12} 60r7
+68E9*XTALFREQ_Field 74e6 75r8 82r23
+71n7*XTALFREQ_Field_32Mhz{68E9} 76r7
+73n7*XTALFREQ_Field_16Mhz{68E9} 77r7 82r41
+80R9*XTALFREQ_Register 86e6 89r8 149r24
+82e7*XTALFREQ{68E9} 90r7
+84m7*Reserved_8_31{2|63M9} 91r7
+98M12*FWID_FWID_Field{2|19M12} 104r24
+101R9*FWID_Register 108e6 111r8 151r24
+104m7*FWID{98M12} 112r7
+106m7*Reserved_16_31{2|19M12} 113r7
+119A9*NRFFW_Registers(2|18M12)<integer> 162r21
+124A9*NRFHW_Registers(2|18M12)<integer> 153r24
+129A9*CUSTOMER_Registers(2|18M12)<integer> 155r24
+135E9*UICR_Disc 138e14 142r22
+137n7*Mode_1{135E9} 142r35 157r15
+138n7*Mode_2{135E9} 160r15
+141R9*UICR_Peripheral 142d7 165e6 167r8 179r26
+142e7*Discriminent{135E9} 156r12
+145m7*CLENR0{2|18M12} 168r7
+147r7*RBPCONF{45R9} 169r7
+149r7*XTALFREQ{80R9} 170r7
+151r7*FWID{101R9} 171r7
+153a7*NRFHW{124A9} 172r7
+155a7*CUSTOMER{129A9} 173r7
+159m13*BOOTLOADERADDR{2|18M12} 174r7
+162a13*NRFFW{119A9} 175r7
+179r4*UICR_Periph{141R9}
+X 4 system.ads
+60K9*System 3|6w6 55r24 87r24 109r24 4|172e11
+90M9*Address
+114n41*Low_Order_First{114E9} 3|55r31 87r31 109r31
+

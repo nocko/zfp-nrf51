@@ -1,0 +1,92 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U nrf51.ecb%s		nrf51-ecb.ads		1c7a0726 NE OO PR PK IL
+W nrf51%s		nrf51.ads		nrf51.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D nrf51.ads		20160630185727 f0252fcf nrf51%s
+D nrf51-ecb.ads		20160630185727 7bba4f5f nrf51.ecb%s
+D system.ads		20160629161519 97e567b6 system%s
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 nrf51.ads
+11K9*nrf51 151e10 3|8r9 74r23 120r23 152r23 171r25 174r25 176r25 178r25 184r25
+. 205r5
+18M12*Word{1|74M9} 3|171r31 174r31 176r31 178r31 184r31
+75M9*UInt30 3|74r29 120r29
+77M9*UInt31 3|152r29
+124m4*ECB_Base{4|90M9} 3|203r30
+X 3 nrf51-ecb.ads
+8K15*ECB 2|11k9 3|205l11 205e14
+20E9*ENDECB_Field 26e6 27r8
+23n7*Disabled{20E9} 28r7
+25n7*Enabled{20E9} 29r7
+32E9*ENDECB_Field_1 38e6 39r8 70r23
+35n7*Endecb_Field_Reset{32E9} 40r7 70r41
+37n7*Set{32E9} 41r7
+44E9*ERRORECB_Field 50e6 51r8
+47n7*Disabled{44E9} 52r7
+49n7*Enabled{44E9} 53r7
+56E9*ERRORECB_Field_1 62e6 63r8 72r23
+59n7*Errorecb_Field_Reset{56E9} 64r7 72r43
+61n7*Set{56E9} 65r7
+68R9*INTENSET_Register 76e6 79r8 180r25
+70e7*ENDECB{32E9} 80r7
+72e7*ERRORECB{56E9} 81r7
+74m7*Reserved_2_31{2|75M9} 82r7
+90E9*ENDECB_Field_2 96e6 97r8 116r23
+93n7*Endecb_Field_Reset{90E9} 98r7 116r41
+95n7*Clear{90E9} 99r7
+102E9*ERRORECB_Field_2 108e6 109r8 118r23
+105n7*Errorecb_Field_Reset{102E9} 110r7 118r43
+107n7*Clear{102E9} 111r7
+114R9*INTENCLR_Register 122e6 125r8 182r25
+116e7*ENDECB{90E9} 126r7
+118e7*ERRORECB{102E9} 127r7
+120m7*Reserved_2_31{2|75M9} 128r7
+136E9*POWER_Field 142e6 143r8 150r23
+139n7*Disabled{136E9} 144r7 150r38
+141n7*Enabled{136E9} 145r7
+148R9*POWER_Register 154e6 157r8 186r25
+150e7*POWER{136E9} 158r7
+152m7*Reserved_1_31{2|77M9} 159r7
+167R9*ECB_Peripheral 188e6 190r8 202r25
+171m7*TASKS_STARTECB{2|18M12} 191r7
+174m7*TASKS_STOPECB{2|18M12} 192r7
+176m7*EVENTS_ENDECB{2|18M12} 193r7
+178m7*EVENTS_ERRORECB{2|18M12} 194r7
+180r7*INTENSET{68R9} 195r7
+182r7*INTENCLR{114R9} 196r7
+184m7*ECBDATAPTR{2|18M12} 197r7
+186r7*POWER{148R9} 198r7
+202r4*ECB_Periph{167R9}
+X 4 system.ads
+60K9*System 3|6w6 77r24 123r24 155r24 4|172e11
+90M9*Address
+114n41*Low_Order_First{114E9} 3|77r31 123r31 155r31
+

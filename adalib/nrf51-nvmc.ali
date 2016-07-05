@@ -1,0 +1,88 @@
+V "GNAT Lib v2016"
+A -nostdinc
+A -O2
+A -gnatA
+A --RTS=/home/nock/devel/zfp-nrf51/
+A -mlittle-endian
+A -mfloat-abi=soft
+A -mcpu=cortex-m0
+A -mthumb
+A -gnatg
+A -gnatp
+A -gnatn2
+A -mthumb
+A -mcpu=cortex-m0
+A -mfloat-abi=soft
+A -fcallgraph-info=su,da
+A -ffunction-sections
+A -fdata-sections
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RR NO_ELABORATION_CODE
+RV SPARK_05
+
+U nrf51.nvmc%s		nrf51-nvmc.ads		38028540 NE OO PR PK IL
+W nrf51%s		nrf51.ads		nrf51.ali
+W system%s		system.ads		system.ali
+
+D interfac.ads		20160629152839 5ab55268 interfaces%s
+D nrf51.ads		20160630185727 f0252fcf nrf51%s
+D nrf51-nvmc.ads	20160630185727 5fc2cd39 nrf51.nvmc%s
+D system.ads		20160629161519 97e567b6 system%s
+X 1 interfac.ads
+74M9*Unsigned_32
+X 2 nrf51.ads
+11K9*nrf51 151e10 3|8r9 36r23 70r23 102r23 133r23 163r19 169r25 172r25 191r5
+18M12*Word{1|74M9} 3|163r25 169r31 172r31
+75M9*UInt30 3|70r29
+77M9*UInt31 3|36r29 102r29 133r29
+140m4*NVMC_Base{4|90M9} 3|189r30
+X 3 nrf51-nvmc.ads
+8K15*NVMC 2|11k9 3|191l11 191e15
+20E9*READY_Field 26e6 27r8 34r23
+23n7*Busy{20E9} 28r7
+25n7*Ready{20E9} 29r7
+32R9*READY_Register 38e6 41r8 157r19
+34e7*READY{20E9} 42r7
+36m7*Reserved_1_31{2|77M9} 43r7
+51E9*WEN_Field 59e6 60r8 68r23
+54n7*Ren{51E9} 61r7 68r36
+56n7*Wen{51E9} 62r7
+58n7*Een{51E9} 63r7
+66R9*CONFIG_Register 72e6 75r8 159r19
+68e7*WEN{51E9} 76r7
+70m7*Reserved_2_31{2|75M9} 77r7
+85E9*ERASEALL_Field 91e6 92r8 100r23
+88n7*Nooperation{85E9} 93r7 100r41
+90n7*Erase{85E9} 94r7
+97R9*ERASEALL_Register 104e6 107r8 161r19
+100e7*ERASEALL{85E9} 108r7
+102m7*Reserved_1_31{2|77M9} 109r7
+117E9*ERASEUICR_Field 123e6 124r8 131r23
+120n7*Nooperation{117E9} 125r7 131r42
+122n7*Erase{117E9} 126r7
+129R9*ERASEUICR_Register 135e6 138r8 165r19
+131e7*ERASEUICR{117E9} 139r7
+133m7*Reserved_1_31{2|77M9} 140r7
+147E9*NVMC_Disc 150e11 154r22
+149n7*Age{147E9} 154r35 167r15
+150n7*Cr1{147E9} 170r15
+153R9*NVMC_Peripheral 154d7 175e6 177r8 188r26
+154e7*Discriminent{147E9} 166r12
+157r7*READY{32R9} 178r7
+159r7*CONFIG{66R9} 179r7
+161r7*ERASEALL{97R9} 180r7
+163m7*ERASEPCR0{2|18M12} 181r7
+165r7*ERASEUICR{129R9} 182r7
+169m13*ERASEPAGE{2|18M12} 183r7
+172m13*ERASEPCR1{2|18M12} 184r7
+188r4*NVMC_Periph{153R9}
+X 4 system.ads
+60K9*System 3|6w6 39r24 73r24 105r24 136r24 4|172e11
+90M9*Address
+114n41*Low_Order_First{114E9} 3|39r31 73r31 105r31 136r31
+
